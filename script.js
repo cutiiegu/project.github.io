@@ -294,10 +294,9 @@ if (userLoginForm) {
 }
 
 // ========== ЗАГРУЗКА И РЕДАКТИРОВАНИЕ ЗАКАЗОВ ПОЛЬЗОВАТЕЛЯ ==========
-
 async function loadUserOrders() {
     try {
-        const response = await fetch('/web_project/api/user/orders.php', {
+        const response = await fetch('/web_project/api/user/orders', {
             method: 'GET',
             headers: { 'Accept': 'application/json' }
         });
